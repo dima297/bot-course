@@ -9,7 +9,7 @@ const chats = {}
 
 
 const startGame = async (chatId)=>{
-    await bot.sendMessage(chatId, 'Угадай цифру от 0 до 9')
+    await bot.sendMessage(chatId, 'Угадай  цифру от 0 до 9')
     const randomNumber = Math.floor(Math.random() * 10)
     chats[chatId] = randomNumber;
     await bot.sendMessage(chatId, 'Отгадай', gameOptions)
@@ -18,7 +18,7 @@ const startGame = async (chatId)=>{
 const start = () => {
 
     bot.setMyCommands([
-        {command: '/start', description: 'Начальное приветствие'},
+        {command: '/start', description: ' Приветствие'},
         {command: '/info', description: 'Info about user'},
         {command: '/game', description: 'Угадай цифру'},
     ])
