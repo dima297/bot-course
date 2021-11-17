@@ -19,7 +19,7 @@ const start = () => {
 
     bot.setMyCommands([
         {command: '/start', description: ' Приветствие'},
-        {command: '/info', description: 'Info about user'},
+        {command: '/info', description: 'Информфция о пользователе'},
         {command: '/game', description: 'Угадай цифру'},
     ])
 
